@@ -51,7 +51,8 @@ table {
     display: none;
 }
 
-.car{
+.car,
+.enemy{
     width: 75px;
     height: 152px;
     background: transparent url(image/player.png);
