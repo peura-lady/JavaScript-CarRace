@@ -5,5 +5,21 @@
 .car{
     width: 75px;
     height: 152px;
-    background: transparent url(image/player.png) center / cover no-repeat;
+    background: transparent url(image/player.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    /* left: 40%; */
+    left: 180px;
+    bottom: 15px;
+}
+
+.gameArea{
+    width: 450px;
+    height: 750px;
+    /* height: 100%; */
+    position: relative;
+    margin: 0 auto;
+    background-color: #292A29;
 }
