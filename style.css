@@ -26,6 +26,9 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+    background-image: url(image/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 ol, ul {
@@ -69,7 +72,7 @@ table {
     height: 100vh;
     position: relative;
     margin: 0 auto;
-    background-color: #292A29;
+    background-color: #5d5d5d;
     overflow: hidden;
 }
 
