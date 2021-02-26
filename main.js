@@ -24,6 +24,14 @@ const setting = {
 
 function startGame(){
     start.classList.add('hide');
+
+    for (let i = 0; i < 20; i++) {
+        const line = document.createElement('div');
+        line.classList.add('line');
+        line.style.top = (i * 100) + "px";
+        gameArea.appendChild(line);
+    }
+
     setting.start = true;
     gameArea.appendChild(car);
     setting.x = car.offsetLeft;

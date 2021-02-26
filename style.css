@@ -23,3 +23,11 @@
     margin: 0 auto;
     background-color: #292A29;
 }
+
+.line{
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    background-color: #fff;
+    left: 215px;
+}
