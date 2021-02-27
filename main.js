@@ -5,6 +5,15 @@ const score = document.querySelector('.score'),
       gameArea = document.querySelector('.gameArea'),
       car = document.createElement('div');
 
+const audio = document.createElement('embed');
+const carCrash = new Audio ('crash.mp3');
+
+audio.src = 'JavaScriptCarRace.mp3';
+audio.style.cssText = `position: absolute; top: -1000px;`;
+
+carCrash.src = 'crash.mp3';
+carCrash.style.cssText = `position: absolute; top: -1000px;`;
+
 car.classList.add('car');
 
 start.addEventListener('click', startGame);
@@ -41,7 +50,7 @@ function startGame(){
         line.classList.add('line');
         line.style.top = (i * 100) + "px";
         line.y = i * 100;
-        gameArea.appendChild(line);
+        gameArea.append(line);
     }
 
     for (let i = 0; i < getQuantityElements(152 * setting.traffic); i++) {
@@ -52,12 +61,13 @@ function startGame(){
         enemy.style.left = Math.floor(Math.random() * (gameArea.offsetWidth - 75)) + 'px';
         enemy.style.top = enemy.y + 'px';
         enemy.style.background = `transparent url(image/enemy${randomEnemy}.png) center / cover no-repeat`;
-        gameArea.appendChild(enemy);
+        gameArea.append(enemy);
     }
 
     setting.score = 0;
     setting.start = true;
-    gameArea.appendChild(car);
+    gameArea.append(car);
+    document.body.append(audio);
     car.style.left = '180px';
     car.style.top = 'auto';
     car.style.bottom = '15px';
@@ -135,7 +145,9 @@ function moveEnemy(){
             carRect.left <= enemyRect.right &&
             carRect.bottom >= enemyRect.top){
                 setting.start = false;
+                audio.remove();
                 console.warn('crash');
+                carCrash.play();
                 start.classList.remove('hide');
                 // start.style.top = score.offsetHeight;
         }
