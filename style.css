@@ -43,6 +43,13 @@ table {
 	border-spacing: 0;
 }
 
+.game{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
 .container__wrapper{
     background-image: url(image/bg.png);
     background-repeat: unset;
@@ -55,8 +62,8 @@ table {
 
 .car,
 .enemy{
-    width: 75px;
-    height: 152px;
+    width: 65px;
+    height: 140px;
     background: transparent url(image/player.png);
     background-position: center;
     background-size: cover;
