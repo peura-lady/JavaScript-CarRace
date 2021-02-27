@@ -24,13 +24,6 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-body {
-	line-height: 1;
-    background-image: url(image/bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 ol, ul {
 	list-style: none;
 }
@@ -48,6 +41,12 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+.container__wrapper{
+    background-image: url(image/bg.png);
+    background-repeat: unset;
+    background-size: 100%;
 }
 
 .hide{
@@ -85,30 +84,167 @@ table {
 .start,
 .score{
     position: absolute;
-    width: 502px;
-    left: 700px;
+    width: 245px;
+    left: 43%;
     margin: 0;
     text-align: center;
     z-index: 200;
-    font-size: 35px;
     cursor: pointer;
 }
-
 
 .start{
     top: 40%;
     color: #fbead8;
-    padding: 50px 0;
+    padding: 25px 0;
     background: #000;
     font-weight: 700;
     font-family: fantasy;
+    font-size: 50px;
 }
 
 .score{
     top: 0;
     color: tomato;
-    padding: 20px 0;
+    padding: 10px 0;
     background: radial-gradient(black, transparent);
     font-weight: 400;
     font-family: monospace;
+    font-size: 20px;
+}
+
+@media (max-width: 1500px) {
+    .start,
+    .score{
+        left: 42%;
+    }
+    .gameArea {
+        width: 420px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .start,
+    .score{
+        left: 41%;
+    }
+    .line {
+        left: 200px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .start,
+    .score{
+        left: 40%;
+    }
+    .car,
+    .enemy{
+        width: 60px;
+        height: 132px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .start,
+    .score{
+        left: 38%;
+    }
+    .gameArea {
+        width: 380px;
+    }
+    .line {
+        left: 180px;
+    }
+    .car,
+    .enemy{
+        width: 60px;
+        height: 132px;
+    }
+}
+
+@media (max-width: 920px) {
+    .start,
+    .score{
+        left: 36%;
+    }
+    .start {
+        font-size: 40px;
+        padding: 23px 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .start,
+    .score{
+        left: 34%;
+    }
+    .gameArea {
+        width: 350px;
+    }
+    .line {
+        left: 170px;
+    }
+}
+
+@media (max-width: 670px) {
+    .start,
+    .score{
+        left: 31%;
+    }
+    .start {
+        font-size: 35px;
+        padding: 18px 0;
+    }
+    .gameArea {
+        width: 290px;
+    }
+    .line {
+        left: 140px;
+    }
+}
+
+@media (max-width: 600px) {
+    .start,
+    .score{
+        left: 27%;
+    }
+}
+
+@media (max-width: 500px) {
+    .start,
+    .score{
+        left: 24%;
+    }
+}
+
+@media (max-width: 435px) {
+    .start,
+    .score{
+        left: 20%;
+    }
+    .gameArea {
+        width: 275px;
+    }
+    .line {
+        left: 130px;
+    }
+    .car,
+    .enemy{
+        width: 50px;
+        height: 118px;
+    }
+}
+
+@media (max-width: 385px) {
+    .start,
+    .score{
+        left: 16%;
+    }
+}
+
+@media (max-width: 350px) {
+    .start,
+    .score{
+        left: 13%;
+    }
 }

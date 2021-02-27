@@ -19,8 +19,8 @@ const keys = {
 const setting = {
     start: false,
     score: 0,
-    speed: 3,
-    traffic: 3
+    speed: 4,
+    traffic: 2
 };
 
 function getQuantityElements(heightElement) {
