@@ -63,8 +63,6 @@ table {
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    left: 180px;
-    bottom: 15px;
 }
 
 .gameArea{
@@ -82,4 +80,35 @@ table {
     height: 50px;
     background-color: #fff;
     left: 215px;
+}
+
+.start,
+.score{
+    position: absolute;
+    width: 502px;
+    left: 700px;
+    margin: 0;
+    text-align: center;
+    z-index: 200;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+.start{
+    top: 40%;
+    color: #fbead8;
+    padding: 50px 0;
+    background: #000;
+    font-weight: 700;
+    font-family: fantasy;
+}
+
+.score{
+    top: 0;
+    color: tomato;
+    padding: 20px 0;
+    background: radial-gradient(black, transparent);
+    font-weight: 400;
+    font-family: monospace;
 }
