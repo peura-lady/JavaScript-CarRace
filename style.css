@@ -145,9 +145,20 @@ table {
     border: 2px solid #548241;
 }
 
-@media (max-width: 1500px) {
-    .start,
+@media (max-width: 1710px) {
+    .score, #topScore{
+        width: 225px;
+    }
     .score{
+        left: 10%;
+    }
+    #topScore{
+        left: 76%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .start{
         left: 42%;
     }
     .gameArea {
@@ -156,18 +167,22 @@ table {
 }
 
 @media (max-width: 1350px) {
-    .start,
-    .score{
+    .start{
         left: 41%;
     }
     .line {
         left: 200px;
     }
+    .score, #topScore{
+        padding: 10px 0;
+    }
+    .score{
+        left: 7%;
+    }
 }
 
 @media (max-width: 1220px) {
-    .start,
-    .score{
+    .start{
         left: 40%;
     }
     .car,
@@ -175,11 +190,13 @@ table {
         width: 60px;
         height: 132px;
     }
+    #topScore {
+        left: 74%;
+    }
 }
 
 @media (max-width: 1050px) {
-    .start,
-    .score{
+    .start{
         left: 38%;
     }
     .gameArea {
@@ -193,22 +210,34 @@ table {
         width: 60px;
         height: 132px;
     }
+    #topScore {
+        left: 72%;
+    }
+    .score{
+        left: 4%;
+    }
 }
 
 @media (max-width: 920px) {
-    .start,
-    .score{
+    .start{
         left: 36%;
     }
     .start {
         font-size: 40px;
         padding: 23px 0;
     }
+    .score,
+    #topScore{
+        width: 130px;
+        font-size: 18px;
+    }
+    #topScore {
+        left: 78%;
+    }
 }
 
 @media (max-width: 800px) {
-    .start,
-    .score{
+    .start{
         left: 34%;
     }
     .gameArea {
@@ -220,8 +249,7 @@ table {
 }
 
 @media (max-width: 670px) {
-    .start,
-    .score{
+    .start{
         left: 31%;
     }
     .start {
@@ -234,25 +262,41 @@ table {
     .line {
         left: 140px;
     }
+    .score {
+        left: 1%;
+    }
 }
 
 @media (max-width: 600px) {
-    .start,
-    .score{
+    .start{
         left: 27%;
+    }
+    .score, #topScore {
+        padding: 0;
+        width: 100px;
+        font-size: 15px;
+        font-weight: 700;
+        background: #91c573; 
+	box-shadow: 5px 5px 57px rgba(145, 197, 115, 0.5) inset; 
+	-webkit-box-shadow: 5px 5px 57px rgba(145, 197, 115, 0.5) inset; 
+	-moz-box-shadow: 5px 5px 57px rgba(145, 197, 115, 0.5) inset; 
+    }
+    #topScore {
+        left: 65%;
+    }
+    .score {
+        left: 1%;
     }
 }
 
 @media (max-width: 500px) {
-    .start,
-    .score{
+    .start{
         left: 24%;
     }
 }
 
 @media (max-width: 435px) {
-    .start,
-    .score{
+    .start{
         left: 20%;
     }
     .gameArea {
@@ -269,15 +313,13 @@ table {
 }
 
 @media (max-width: 385px) {
-    .start,
-    .score{
+    .start{
         left: 16%;
     }
 }
 
 @media (max-width: 350px) {
-    .start,
-    .score{
+    .start{
         left: 13%;
     }
 }
