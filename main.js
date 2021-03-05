@@ -23,9 +23,7 @@ start.addEventListener('click', startGame);
 document.addEventListener('keydown', startRun);
 document.addEventListener('keyup', stopRun);
 
-// const countSection = Math.floor(document.documentElement.clientHeight / HEIGHT_ELEM);
 const countSection = Math.floor(document.documentElement.clientHeight / HEIGHT_ELEM + 1);
-// gameArea.style.height = countSection * HEIGHT_ELEM;
 gameArea.style.cssText = `overflow: hidden;`;
 
 console.log();
@@ -47,21 +45,10 @@ const setting = {
 
 let level = setting.level;
 
-// topScore.textContent = topScore.innerHTML =
-// 'Best Score:<br><br>' + localStorage.getItem('jscarrace_score', setting.score) ?
-// topScore.innerHTML =
-// 'Best Score:<br><br>' + localStorage.getItem('jscarrace_score', setting.score) :
-//     0;
-
 const getLocalStorage = () =>
   parseInt(localStorage.getItem("jscarrace_score", setting.score));
 topScore.innerHTML =
   "Best Score:<br><br>" + getLocalStorage() ? "Best Score:<br><br>" + getLocalStorage() : 0;
-
-// const addLocalStorage = () => {
-//     localStorage.setItem('jscarrace_score', setting.score);
-//     topScore.textContent = 'Best Score:<br>' + setting.score;
-// }
 
 const addLocalStorage = () => {
     const result = getLocalStorage();
@@ -71,11 +58,10 @@ const addLocalStorage = () => {
     }
   };
 
+
 function getQuantityElements(heightElement) {
     return (gameArea.offsetHeight / heightElement) + 1;
 }
-
-
 
 function startGame(event){
 
@@ -107,7 +93,6 @@ function startGame(event){
         const line = document.createElement('div');
         line.classList.add('line');
         line.style.top = (i * HEIGHT_ELEM) + "px";
-        // line.style.heigh = (HEIGHT_ELEM / 3) + 'px';
         line.y = i * HEIGHT_ELEM;
         gameArea.append(line);
     }
@@ -221,7 +206,6 @@ function moveEnemy(){
                 console.warn('crash');
                 carCrash.play();
                 start.classList.remove('hide');
-                // start.style.top = score.offsetHeight;
                 addLocalStorage();
         }
 
