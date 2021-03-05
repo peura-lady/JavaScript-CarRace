@@ -91,34 +91,59 @@ table {
 }
 
 .start,
-.score{
+.score,
+#topScore{
     position: absolute;
     width: 245px;
-    left: 43%;
+    height: 66px;
     margin: 0;
     text-align: center;
     z-index: 200;
-    cursor: pointer;
 }
 
 .start{
     top: 40%;
+    left: 43%;
     color: #fbead8;
     padding: 25px 0;
-    background: #000;
+    /* background: #000; */
     font-weight: 700;
     font-family: fantasy;
     font-size: 50px;
 }
 
-.score{
-    top: 0;
+.score,
+#topScore{
+    top: 5px;
     color: tomato;
-    padding: 10px 0;
-    background: radial-gradient(black, transparent);
+    padding: 15px 0;
+    background: #548241;
     font-weight: 400;
     font-family: monospace;
     font-size: 20px;
+    left: 23%;
+    border-radius: 10px;
+}
+#topScore{
+    left: 63.2%;
+}
+.btn{
+    padding: 10px 17px;
+    display: block;
+    margin: 17px auto;
+    color: #fbead8;
+    background-color: #242424;
+    border: 2px solid #5d5d5d;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 110px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn:hover{
+    background-color: #91c573;
+    border: 2px solid #548241;
 }
 
 @media (max-width: 1500px) {

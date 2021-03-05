@@ -4,7 +4,8 @@ const HEIGHT_ELEM = 152;
 const score = document.querySelector('.score'),
       start = document.querySelector('.start'),
       gameArea = document.querySelector('.gameArea'),
-      car = document.createElement('div');
+      car = document.createElement('div'),
+      topScore = document.getElementById('topScore');
 
 const audio = document.createElement('embed');
 const carCrash = new Audio ('crash.mp3');
@@ -39,9 +40,36 @@ const keys = {
 const setting = {
     start: false,
     score: 0,
-    speed: 5,
-    traffic: 2
+    speed: 0,
+    traffic: 0,
+    level: 0,
 };
+
+let level = setting.level;
+
+// topScore.textContent = topScore.innerHTML =
+// 'Best Score:<br><br>' + localStorage.getItem('jscarrace_score', setting.score) ?
+// topScore.innerHTML =
+// 'Best Score:<br><br>' + localStorage.getItem('jscarrace_score', setting.score) :
+//     0;
+
+const getLocalStorage = () =>
+  parseInt(localStorage.getItem("jscarrace_score", setting.score));
+topScore.innerHTML =
+  "Best Score:<br><br>" + getLocalStorage() ? "Best Score:<br><br>" + getLocalStorage() : 0;
+
+// const addLocalStorage = () => {
+//     localStorage.setItem('jscarrace_score', setting.score);
+//     topScore.textContent = 'Best Score:<br>' + setting.score;
+// }
+
+const addLocalStorage = () => {
+    const result = getLocalStorage();
+    if (!result || result < setting.score) {
+      localStorage.setItem("jscarrace_score", setting.score);
+      topScore.innerHTML = "Best Score:<br><br>" + setting.score;
+    }
+  };
 
 function getQuantityElements(heightElement) {
     return (gameArea.offsetHeight / heightElement) + 1;
@@ -49,7 +77,28 @@ function getQuantityElements(heightElement) {
 
 
 
-function startGame(){
+function startGame(event){
+
+    const target = event.target;
+
+    if (target === start) return;
+
+    switch (target.id){
+        case'easy':
+            setting.speed = 4;
+            setting.traffic = 4;
+            break;
+        case'medium':
+            setting.speed = 6;
+            setting.traffic = 3;
+            break;
+        case'hard':
+            setting.speed = 8;
+            setting.traffic = 2;
+            break;
+    }
+
+
     start.classList.add('hide');
     gameArea.innerHTML = '';
     
@@ -92,9 +141,17 @@ function startGame(){
 }
 
 function playGame(){
+
+    setting.level = Math.floor(setting.score / 2000);
+
+    if(setting.level !== level) {
+        level = setting.level;
+        setting.speed += 1;
+    }
+
     if (setting.start){
         setting.score += setting.speed;
-        score.innerHTML = 'SCORE:<br>' + setting.score;
+        score.innerHTML = 'SCORE:<br><br>' + setting.score;
         moveRoad();
         moveEnemy();
         if(keys.ArrowLeft && setting.x > 0){
@@ -165,6 +222,7 @@ function moveEnemy(){
                 carCrash.play();
                 start.classList.remove('hide');
                 // start.style.top = score.offsetHeight;
+                addLocalStorage();
         }
 
         
