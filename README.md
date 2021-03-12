@@ -3,10 +3,10 @@ A car race game made in JavaScript. True game of 2000's. This game was a persona
 Game includes three levels: Easy, Medium and Hard, also Best Score and music, which goes with you throught the experience in the game.
 
 # Video Clips
-Desctop version of the game <br>
+Desktop version of the game <br>
 ![screenshot](https://github.com/peura-lady/JavaScript-CarRace/blob/main/image/video1-desctop.gif)
 
-Other example of the Desctop version <br>
+Other example of the Desktop version <br>
 ![screenshot](https://github.com/peura-lady/JavaScript-CarRace/blob/main/image/video2-desctop.gif)
 
 Tablet version <br>
@@ -17,7 +17,7 @@ Mobile Version <br>
 
 # Screenshots
 
-Desctop <br>
+Desktop <br>
 ![screenshot](https://github.com/peura-lady/JavaScript-CarRace/blob/main/image/img1-desctop.PNG)
 
 Tablet <br>
