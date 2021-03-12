@@ -20,7 +20,7 @@ Mobile Version
 Desctop
 ![screenshot](https://github.com/peura-lady/JavaScript-CarRace/blob/main/image/img1-desctop.PNG)
 
-Tablet
+Tablet <br>
 ![screenshot](https://github.com/peura-lady/JavaScript-CarRace/blob/main/image/img2-tablet.PNG)
 
 Mobile
