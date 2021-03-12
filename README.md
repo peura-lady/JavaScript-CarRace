@@ -3,25 +3,25 @@ A car race game made in JavaScript. True game of 2000's. This game was a persona
 Game includes three levels: Easy, Medium and Hard, also Best Score and music, which goes with you throught the experience in the game.
 
 # Video Clips
-Desctop version of the game
-<img src="images/video1-desctop.gif" style="width:600px;height:283px;">
+Desctop version of the game <br>
+![screenshot](https://github.com/peura-lady/JavaScript-CarRace/blob/main/image/video1-desctop.gif)
 
-Other example of the Desctop version
-<img src = "images/video2-desctop.gif" width=100%;>
+Other example of the Desctop version <br>
+![screenshot](https://github.com/peura-lady/JavaScript-CarRace/blob/main/image/video2-desctop.gif)
 
-Tablet version
-<img src = "images/video3-tablet.gif" width=100%;>
+Tablet version <br>
+![screenshot](https://github.com/peura-lady/JavaScript-CarRace/blob/main/image/video3-tablet.gif)
 
-Mobile Version
-<img src = "images/video4-mobile.gif" width=100%;>
+Mobile Version <br>
+![screenshot](https://github.com/peura-lady/JavaScript-CarRace/blob/main/image/video4-mobile.gif)
 
 # Screenshots
 
-Desctop
+Desctop <br>
 ![screenshot](https://github.com/peura-lady/JavaScript-CarRace/blob/main/image/img1-desctop.PNG)
 
 Tablet <br>
 ![screenshot](https://github.com/peura-lady/JavaScript-CarRace/blob/main/image/img2-tablet.PNG)
 
-Mobile
+Mobile <br>
 ![screenshot](https://github.com/peura-lady/JavaScript-CarRace/blob/main/image/img3-mobile.PNG)
