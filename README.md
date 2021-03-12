@@ -17,4 +17,4 @@ Mobile Version
 
 #Screenshots
 
-<img src = "img1-desctop.PNG" width=100%;>
+![screenshot](https://github.com/peura-lady/JavaScript-CarRace/blob/main/image/img1-desctop.PNG)
