@@ -58,6 +58,7 @@ const addLocalStorage = () => {
     }
   };
 
+// localStorage.clear();
 
 function getQuantityElements(heightElement) {
     return (gameArea.offsetHeight / heightElement) + 1;
