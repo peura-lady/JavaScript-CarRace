@@ -4,7 +4,7 @@ Game includes three levels: Easy, Medium and Hard, also Best Score and music, wh
 
 # Video Clips
 Desctop version of the game
-<img src = "images/video1-desctop.gif" width=100%;>
+<img src="images/video1-desctop.gif" style="width:600px;height:283px;">
 
 Other example of the Desctop version
 <img src = "images/video2-desctop.gif" width=100%;>
