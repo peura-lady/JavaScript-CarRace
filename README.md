@@ -14,3 +14,7 @@ Tablet version
 
 Mobile Version
 <img src = "images/video4-mobile.gif" width=100%;>
+
+#Screenshots
+
+<img src = "img1-desctop.PNG" width=100%;>
