@@ -15,6 +15,13 @@ Tablet version
 Mobile Version
 <img src = "images/video4-mobile.gif" width=100%;>
 
-#Screenshots
+# Screenshots
 
+Desctop
 ![screenshot](https://github.com/peura-lady/JavaScript-CarRace/blob/main/image/img1-desctop.PNG)
+
+Tablet
+![screenshot](https://github.com/peura-lady/JavaScript-CarRace/blob/main/image/img2-tablet.PNG)
+
+Mobile
+![screenshot](https://github.com/peura-lady/JavaScript-CarRace/blob/main/image/img3-mobile.PNG)
